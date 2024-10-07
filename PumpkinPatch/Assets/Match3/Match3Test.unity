@@ -266,7 +266,7 @@ MonoBehaviour:
   height: 8
   cellSize: 1
   originPosition: {x: 0, y: 0, z: 0}
-  debug: 1
+  debug: 0
   gemPrefab: {fileID: 6548918351810114040, guid: f66c414a3010cd946b96a7adaecae8ff, type: 3}
   gemTypes:
   - {fileID: 11400000, guid: 967d54690e7f2d54ea1c65faa69bec96, type: 2}
