@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -110,9 +111,13 @@ namespace Match3 {
         IEnumerator ExplodeGems(List<Vector2Int> matches) {
             audioManager.PlayPop();
 
+            CountDestroyedGems(matches); // Paul Code
+
             foreach (var match in matches) {
                 var gem = grid.GetValue(match.x, match.y).GetValue();
                 grid.SetValue(match.x, match.y, null);
+
+                
 
                 ExplodeVFX(match);
                 
@@ -123,6 +128,8 @@ namespace Match3 {
                 Destroy(gem.gameObject, 0.1f);
             }
         }
+
+        
 
         void ExplodeVFX(Vector2Int match) {
             // TODO: Pool
@@ -222,6 +229,15 @@ namespace Match3 {
 
         bool IsValidPosition(Vector2 gridPosition) {
             return gridPosition.x >= 0 && gridPosition.x < width && gridPosition.y >= 0 && gridPosition.y < height;
+        }
+
+
+        // Paul Code
+
+        public List<Vector2Int> AllMatches;
+        public void CountDestroyedGems(List<Vector2Int> matches)
+        {
+            AllMatches.AddRange(matches);
         }
     }
 }
