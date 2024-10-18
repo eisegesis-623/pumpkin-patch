@@ -25,6 +25,9 @@ namespace Match3 {
 
         Vector2Int selectedGem = Vector2Int.one * -1;
 
+        //grabs the dialogue script -Astraea
+        public Dialogue dialogue;
+
         void Awake() {
             inputReader = GetComponent<InputReader>();
             audioManager = GetComponent<AudioManager>();
@@ -110,6 +113,9 @@ namespace Match3 {
 
         IEnumerator ExplodeGems(List<Vector2Int> matches) {
             audioManager.PlayPop();
+
+            //updates the dialogue text -Astraea
+            dialogue.MatchMessage();
 
             CountDestroyedGems(matches); // Paul Code
 
