@@ -1,18 +1,28 @@
 ﻿using UnityEngine;
 
-namespace Match3 {
+namespace Match3
+{
     [RequireComponent(typeof(AudioSource))]
-    public class AudioManager : MonoBehaviour {
+    public class AudioManager : MonoBehaviour
+    {
         [SerializeField] AudioClip click;
         [SerializeField] AudioClip deselect;
         [SerializeField] AudioClip match;
         [SerializeField] AudioClip noMatch;
         [SerializeField] AudioClip woosh;
         [SerializeField] AudioClip pop;
-        
+
         AudioSource audioSource;
-        
-        void OnValidate() {
+
+        void OnValidate()
+        {
+            // OnValidate is called in the editor, ensure we have an AudioSource assigned in editor mode.
+            if (audioSource == null) audioSource = GetComponent<AudioSource>();
+        }
+
+        void Start()
+        {
+            // Ensure audioSource is initialized during runtime as well.
             if (audioSource == null) audioSource = GetComponent<AudioSource>();
         }
 
@@ -23,7 +33,8 @@ namespace Match3 {
         public void PlayWoosh() => PlayRandomPitch(woosh);
         public void PlayPop() => PlayRandomPitch(pop);
 
-        void PlayRandomPitch(AudioClip audioClip) {
+        void PlayRandomPitch(AudioClip audioClip)
+        {
             audioSource.pitch = Random.Range(0.9f, 1.1f);
             audioSource.PlayOneShot(audioClip);
             audioSource.pitch = 1f;

@@ -29,11 +29,18 @@ namespace Match3 {
         public Dialogue dialogue;
 
         void Awake() {
-            inputReader = GetComponent<InputReader>();
-            audioManager = GetComponent<AudioManager>();
+            //inputReader = GetComponent<InputReader>();
+            //audioManager = GetComponent<AudioManager>();
+
+            //Debug.developerConsoleVisible = true;
         }
         
         void Start() {
+            inputReader = GetComponent<InputReader>();
+            audioManager = GetComponent<AudioManager>();
+
+            Debug.developerConsoleVisible = true;
+
             InitializeGrid();
             inputReader.Fire += OnSelectGem;
         }
@@ -115,7 +122,7 @@ namespace Match3 {
             audioManager.PlayPop();
 
             //updates the dialogue text -Astraea
-            dialogue.MatchMessage();
+            if (dialogue) { dialogue.MatchMessage(); } else { Debug.Log("No dialogue found."); }
 
             CountDestroyedGems(matches); // Paul Code
 
