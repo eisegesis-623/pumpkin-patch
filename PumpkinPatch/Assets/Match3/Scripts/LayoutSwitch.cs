@@ -5,11 +5,9 @@ using UnityEngine;
 
 public class LayoutSwitch : MonoBehaviour
 {
-    public GameObject candy;
-    public GameObject pumpkin;
-    public GameObject frank;
-    public GameObject grave;
-    public GameObject vampire;
+    public List<GameObject> levelLayouts;
+    [HideInInspector]
+    public int currentLevelIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +18,22 @@ public class LayoutSwitch : MonoBehaviour
 
     public void LoadNextLevel(int nextIndex)
     {
-        List<GameObject> list = new List<GameObject>() { candy,pumpkin,frank,grave,vampire};
-
-        foreach (GameObject i in list)
+        if (nextIndex > 4)
         {
-            if (list[nextIndex] == i)
+            Debug.Log("You won the game!");
+            //nextIndex = 0;
+        }
+        else if (nextIndex < 0)
+        {
+            nextIndex = 4;
+        }
+        currentLevelIndex = nextIndex;
+        foreach (GameObject i in levelLayouts)
+        {
+            if (levelLayouts[nextIndex] == i)
             {
                 i.SetActive(true);
+                Debug.Log("Succesfully loaded "+ i.name);
             }
             else
             {
