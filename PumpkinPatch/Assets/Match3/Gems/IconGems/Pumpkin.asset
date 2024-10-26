@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Pumpkin
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7d35bc506b81ce344b28b9c808c2d0b1, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 7043bc9cceb32ad489e10883b0dbe90b, type: 3}

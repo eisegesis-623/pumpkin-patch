@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Candycorn
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 56c52126162213049b348bfe4dd786ea, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 661feab6470d9d747966c3d1cb231881, type: 3}

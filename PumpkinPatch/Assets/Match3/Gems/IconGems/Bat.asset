@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Bat
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 3067afff89adaef429135b10b91611eb, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 820d240c2da30aa49b37d9f48e371617, type: 3}

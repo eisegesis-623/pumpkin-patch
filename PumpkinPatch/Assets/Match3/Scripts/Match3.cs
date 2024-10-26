@@ -79,6 +79,7 @@ namespace Match3
             else if (selectedGem == Vector2Int.one * -1)
             {
                 SelectGem(gridPos);
+                
                 audioManager.PlayClick();
             }
             else if (AreAdjacent(selectedGem, gridPos))
@@ -329,8 +330,16 @@ namespace Match3
             grid.SetValue(x, y, gridObject);
         }
 
-        void DeselectGem() => selectedGem = new Vector2Int(-1, -1);
-        void SelectGem(Vector2Int gridPos) => selectedGem = gridPos;
+        void DeselectGem()
+        {
+            grid.GetValue(selectedGem.x, selectedGem.y).GetValue().SetSpriteAsSelected(false);
+            selectedGem = new Vector2Int(-1, -1);
+        }
+        void SelectGem(Vector2Int gridPos)
+        {
+            grid.GetValue(gridPos.x, gridPos.y).GetValue().SetSpriteAsSelected(true);
+            selectedGem = gridPos;
+        }
 
         bool IsEmptyPosition(Vector2Int gridPosition) => grid.GetValue(gridPosition.x, gridPosition.y) == null;
 

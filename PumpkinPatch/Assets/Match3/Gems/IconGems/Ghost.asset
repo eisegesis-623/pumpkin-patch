@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Ghost
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 584e84a0b4f6bc443a198c0be77a97db, type: 3}
+  selectedSprite: {fileID: 21300000, guid: d0e5fe3da91df134d87ca29343d7d30b, type: 3}
