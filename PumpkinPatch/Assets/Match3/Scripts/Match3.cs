@@ -128,6 +128,8 @@ namespace Match3
                     {
                         Debug.Log("Player has won the level!");
                         matchProgressText.text = "You won!";
+
+                        GetComponent<LayoutSwitch>().LoadNextLevel(1);
                         yield break;
                     }
 

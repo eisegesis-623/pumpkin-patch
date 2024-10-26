@@ -18,7 +18,7 @@ public class LayoutSwitch : MonoBehaviour
     }
 
 
-    void LoadNextLevel(int nextIndex)
+    public void LoadNextLevel(int nextIndex)
     {
         List<GameObject> list = new List<GameObject>() { candy,pumpkin,frank,grave,vampire};
 
