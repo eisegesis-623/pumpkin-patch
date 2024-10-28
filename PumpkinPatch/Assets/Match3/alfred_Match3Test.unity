@@ -3270,7 +3270,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_LeftButtonAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Left Button
       m_Type: 0
@@ -3278,19 +3278,11 @@ MonoBehaviour:
       m_Id: 3e312c5b-fe0f-4779-b3e9-e152ae3a610d
       m_Processors: 
       m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: c2deaf80-c269-4fd5-9294-6d4a46458e68
-        m_Path: <Gamepad>/buttonSouth
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Left Button
-        m_Flags: 0
+      m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -7842744694575517070, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
   m_MiddleButtonAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Middle Button
       m_Type: 0
@@ -3300,9 +3292,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 2001381695103713510, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
   m_RightButtonAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Right Button
       m_Type: 0
@@ -3312,9 +3304,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 2001381695103713510, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
   m_ForwardButtonAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Forward Button
       m_Type: 0
@@ -3324,9 +3316,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 2001381695103713510, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
   m_BackButtonAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Back Button
       m_Type: 0
@@ -3336,9 +3328,9 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 2001381695103713510, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
   m_ScrollWheelAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Scroll Wheel
       m_Type: 0
@@ -3348,7 +3340,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 2001381695103713510, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
 --- !u!1 &450287268
 GameObject:
   m_ObjectHideFlags: 0
@@ -14707,6 +14699,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 810786645}
   - {fileID: 976500824}
   - {fileID: 42670939}
   - {fileID: 1786589844}
@@ -14720,4 +14713,3 @@ SceneRoots:
   - {fileID: 1101160675}
   - {fileID: 1971697931}
   - {fileID: 430323484}
-  - {fileID: 810786645}
