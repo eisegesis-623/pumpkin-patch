@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Skull
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 26bab92ba82220245b7ab4815074e96e, type: 3}
+  selectedSprite: {fileID: 21300000, guid: 9c0ddeaf7776d7a429a7eb742ae4a399, type: 3}

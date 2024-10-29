@@ -9,6 +9,19 @@ namespace Match3 {
             this.type = type;
             GetComponent<SpriteRenderer>().sprite = type.sprite;
         }
+
+        public void SetSpriteAsSelected(bool isSelected)
+        {
+            if (isSelected)
+            {
+                GetComponent<SpriteRenderer>().sprite = type.selectedSprite;
+            }
+            else
+            {
+                Debug.Log("OFF OFF OFF");
+                GetComponent<SpriteRenderer>().sprite = type.sprite;
+            }
+        }
         
         public GemType GetType() => type;
     }
