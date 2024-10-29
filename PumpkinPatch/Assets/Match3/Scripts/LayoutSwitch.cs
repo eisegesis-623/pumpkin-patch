@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LayoutSwitch : MonoBehaviour
 {
@@ -16,30 +18,32 @@ public class LayoutSwitch : MonoBehaviour
     }
 
 
+    public SceneAsset nextScene;
     public void LoadNextLevel(int nextIndex)
     {
-        if (nextIndex > 4)
-        {
-            Debug.Log("You won the game!");
-            //nextIndex = 0;
-        }
-        else if (nextIndex < 0)
-        {
-            nextIndex = 4;
-        }
-        currentLevelIndex = nextIndex;
-        foreach (GameObject i in levelLayouts)
-        {
-            if (levelLayouts[nextIndex] == i)
-            {
-                i.SetActive(true);
-                Debug.Log("Succesfully loaded "+ i.name);
-            }
-            else
-            {
-                i.SetActive(false);
-            }
-        }
+        SceneManager.LoadScene(nextScene.name);
+        //if (nextIndex > 4)
+        //{
+        //    Debug.Log("You won the game!");
+        //    //nextIndex = 0;
+        //}
+        //else if (nextIndex < 0)
+        //{
+        //    nextIndex = 4;
+        //}
+        //currentLevelIndex = nextIndex;
+        //foreach (GameObject i in levelLayouts)
+        //{
+        //    if (levelLayouts[nextIndex] == i)
+        //    {
+        //        i.SetActive(true);
+        //        Debug.Log("Succesfully loaded "+ i.name);
+        //    }
+        //    else
+        //    {
+        //        i.SetActive(false);
+        //    }
+        //}
     }
 
 
