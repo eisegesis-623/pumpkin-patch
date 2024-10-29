@@ -53,8 +53,9 @@ namespace Match3
 
         void UpdateMatchProgressText()
         {
-            int matchesLeft = gemMatchTracker.MatchesLeftForWin();
-            matchProgressText.text = $"{targetGemType.name}: {matchesLeft} matches left to win!";
+            //edited text display for updated UI -Astraea
+            int matchesLeft = 20 - gemMatchTracker.MatchesLeftForWin();
+            matchProgressText.text = $"{matchesLeft}/20";
         }
 
         void OnDestroy()
@@ -128,7 +129,7 @@ namespace Match3
                     if (gemMatchTracker.HasPlayerWon())
                     {
                         Debug.Log("Player has won the level!");
-                        matchProgressText.text = "You won!";
+                        //matchProgressText.text = "You won!";
 
                         LayoutSwitch layoutSwitch = GetComponent<LayoutSwitch>();
                         layoutSwitch.LoadNextLevel(layoutSwitch.currentLevelIndex+1);
