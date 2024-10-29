@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5885529666129353136}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4175, y: 1.4175, z: 1.4175}
   m_ConstrainProportionsScale: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Boo!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e0e84a7317304b4eb360578655b4bbf, type: 2}
+  m_sharedMaterial: {fileID: -4379197462425230968, guid: 0e0e84a7317304b4eb360578655b4bbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 15
+  m_fontSizeMin: 12
   m_fontSizeMax: 28
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cde01f7218d78b49a4df091cd82c606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  match3: {fileID: 0}
   textBox: {fileID: 7452240727622009938}
   goodMessages:
   - Nice!
@@ -163,3 +162,10 @@ MonoBehaviour:
   - Try again!
   funMessages:
   - We're trying to reach you about your car's extended warranty
+  littleGuyPoses:
+  - {fileID: 21300000, guid: e2163339c83d2454380b5ca63e5f0e79, type: 3}
+  - {fileID: 21300000, guid: 4c34db2773c270644b96b24ffaffe576, type: 3}
+  - {fileID: 21300000, guid: 9225647b9a6389849bc05de81f97ab80, type: 3}
+  - {fileID: 21300000, guid: d10b4282e77982748bd9e834be7dc1f2, type: 3}
+  - {fileID: 21300000, guid: 586a413a2b7bcca46ad7aa999b15a1db, type: 3}
+  littleGuy: {fileID: 0}
