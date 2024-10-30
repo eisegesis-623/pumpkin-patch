@@ -1489,6 +1489,7 @@ MonoBehaviour:
   - {fileID: 1781750803}
   - {fileID: 0}
   currentLevelIndex: 0
+  nextScene: {fileID: 102900000, guid: a0be2520ffa16ec4fb01a1c9cb68b679, type: 3}
 --- !u!1 &1392053599
 GameObject:
   m_ObjectHideFlags: 0

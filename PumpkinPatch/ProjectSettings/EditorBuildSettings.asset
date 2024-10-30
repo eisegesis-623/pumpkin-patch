@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Match3/Match3Test.unity
     guid: 665896a444f250546afd34d83eecb49f
+  - enabled: 1
+    path: Assets/Scenes/Candyland.unity
+    guid: 8030b62e898e9be4c81807fc6fb6c263
+  - enabled: 1
+    path: Assets/Scenes/Frankenstein.unity
+    guid: 9de6539afad05704d9430fdd5417a084
+  - enabled: 1
+    path: Assets/Scenes/Graveyard.unity
+    guid: 077055cf3ee65004f954040c0fb5ddd1
+  - enabled: 1
+    path: Assets/Scenes/Vampire.unity
+    guid: a0be2520ffa16ec4fb01a1c9cb68b679
+  - enabled: 1
+    path: Assets/Scenes/PumpkinPatch.unity
+    guid: 49b407bd28ed21444941a7b130628364
+  - enabled: 1
+    path: Assets/Scenes/YouWinScreen.unity
+    guid: 813790d6329634f4499dd9d2214b0ca5
   m_configObjects: {}
