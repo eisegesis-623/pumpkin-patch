@@ -1217,6 +1217,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentLevelIndex: 0
+  nextScene: {fileID: 102900000, guid: 49b407bd28ed21444941a7b130628364, type: 3}
 --- !u!114 &1240431122 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}

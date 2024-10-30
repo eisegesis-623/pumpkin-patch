@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PumpkinPatch.unity
     guid: 49b407bd28ed21444941a7b130628364
+  - enabled: 1
+    path: Assets/Scenes/YouWinScreen.unity
+    guid: 813790d6329634f4499dd9d2214b0ca5
   m_configObjects: {}
