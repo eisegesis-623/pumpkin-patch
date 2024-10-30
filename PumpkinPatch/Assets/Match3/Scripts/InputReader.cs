@@ -18,6 +18,7 @@ namespace Match3 {
             playerInput = GetComponent<PlayerInput>();
             selectAction = playerInput.actions["Select"];
             fireAction = playerInput.actions["Fire"];
+            //fireAction = playerInput.["Fire"];
             
             fireAction.performed += OnFire;
         }
@@ -26,6 +27,10 @@ namespace Match3 {
             fireAction.performed -= OnFire;
         }
 
-        void OnFire(InputAction.CallbackContext obj) => Fire?.Invoke();
+        void OnFire(InputAction.CallbackContext obj)
+        {
+            Debug.Log("Pew pew!");
+            Fire?.Invoke();
+        }
     }
 }

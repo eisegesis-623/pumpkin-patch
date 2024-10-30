@@ -5,6 +5,7 @@ using DG.Tweening;
 using UnityEngine;
 using TMPro;
 using Random = UnityEngine.Random;
+using UnityEngine.InputSystem.UI;
 
 namespace Match3
 {
@@ -68,7 +69,10 @@ namespace Match3
             // If a turn is being processed, ignore input
             if (isProcessingTurn) return;
 
-            var gridPos = grid.GetXY(Camera.main.ScreenToWorldPoint(inputReader.Selected));
+            var gridPos = grid.GetXY(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            Debug.Log("Mouse: " + gridPos);
+            //gridPos = grid.GetXY(FindObjectOfType<MouseVisual>().transform.position);
+            Debug.Log("Controller: "+gridPos);
 
             if (!IsValidPosition(gridPos) || IsEmptyPosition(gridPos)) return;
 

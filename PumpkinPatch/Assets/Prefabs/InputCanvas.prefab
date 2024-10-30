@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424b6720ff5999446843ba414e58a907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CursorMode: 0
+  m_CursorMode: 1
   m_CursorGraphic: {fileID: 1522840884828157729}
   m_CursorTransform: {fileID: 5324526037222209517}
   m_CursorSpeed: 1000
@@ -85,7 +85,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -7842744694575517070, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
+    m_Reference: {fileID: 1934237124321741150, guid: d292e33c870b8fc4ab1c9319c5a7e40e, type: 3}
   m_MiddleButtonAction:
     m_UseReference: 1
     m_Action:
@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 9141795783690598858}
   - component: {fileID: 1522840884828157729}
   - component: {fileID: 7690069849398160828}
+  - component: {fileID: 6103531092003096731}
   m_Layer: 0
   m_Name: MouseVisual
   m_TagString: Untagged
@@ -237,6 +238,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 4, y: 4}
   m_UseGraphicAlpha: 1
+--- !u!114 &6103531092003096731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3415569259852870287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bbe229b2b07d643b77ff1a10a1820d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5923128198490708863
 GameObject:
   m_ObjectHideFlags: 0
