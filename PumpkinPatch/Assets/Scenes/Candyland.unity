@@ -1415,6 +1415,10 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 789346563063938575, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2f94888bda63d52499bde8e298310ec2, type: 3}
     - target: {fileID: 1184496003556100617, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1571,6 +1575,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 156
       objectReference: {fileID: 0}
+    - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: littleGuyPoses.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2f94888bda63d52499bde8e298310ec2, type: 3}
+    - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: littleGuyPoses.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 74fe4bec589e1b54381087a9fac18ca3, type: 3}
+    - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: littleGuyPoses.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e6b8d02475e8d247a41085fd557dbd4, type: 3}
+    - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: littleGuyPoses.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: b481909dc9b7ae241a637775970562a6, type: 3}
+    - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: littleGuyPoses.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e8a1424a0a63294eaa25846028f96f9, type: 3}
     - target: {fileID: 8788306200594561630, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: m_SizeDelta.x
       value: 188.12
@@ -1586,6 +1610,14 @@ PrefabInstance:
     - target: {fileID: 8788306200594561630, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 100.340004
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218717867416828503, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 314.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 9218717867416828503, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -122.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
