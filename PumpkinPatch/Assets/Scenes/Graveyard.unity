@@ -636,6 +636,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 584e84a0b4f6bc443a198c0be77a97db, type: 3}
+    - target: {fileID: 789346563063938575, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c8fb8a2da52908c4eb8cecc5bec6db2d, type: 3}
     - target: {fileID: 1184496003556100617, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: m_Camera
       value: 
@@ -751,7 +755,7 @@ PrefabInstance:
     - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: littleGuyPoses.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: ab2258cee2fa61e4aacd2b4a17479111, type: 3}
+      objectReference: {fileID: 21300000, guid: c8fb8a2da52908c4eb8cecc5bec6db2d, type: 3}
     - target: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: littleGuyPoses.Array.data[1]
       value: 
@@ -770,11 +774,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 7bb6187526f077e448956ef77b30095a, type: 3}
     - target: {fileID: 9218717867416828503, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 330
+      value: 320.67
       objectReference: {fileID: 0}
     - target: {fileID: 9218717867416828503, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -126.4
+      value: -122.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
