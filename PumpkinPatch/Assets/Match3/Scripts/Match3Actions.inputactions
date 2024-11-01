@@ -693,6 +693,17 @@
                 },
                 {
                     "name": "",
+                    "id": "e46215bc-9731-463a-aa55-38f0c34379d6",
+                    "path": "<VirtualMouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR;Joystick;Touch;Gamepad;Keyboard&Mouse",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4faf7dc9-b979-4210-aa8c-e808e1ef89f5",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",

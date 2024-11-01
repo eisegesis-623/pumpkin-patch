@@ -688,7 +688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &810786642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,6 +1051,8 @@ MonoBehaviour:
   explosion: {fileID: 131954870701629426, guid: 60a7c48192f9a8f4896074c3156c42c6, type: 3}
   matchProgressText: {fileID: 1467335819}
   targetGemType: {fileID: 11400000, guid: 236ba224530938240adaa313a82e74e7, type: 2}
+  movesLeftText: {fileID: 1806248626537949761}
+  maxMoves: 30
   dialogue: {fileID: 808846812}
   AllMatches: []
 --- !u!114 &1223745092
@@ -1065,6 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc98bb6e72848acaa2a7c02de9540a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystickSensitivity: 1000
 --- !u!114 &1223745093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,6 +1824,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+--- !u!114 &1806248626537949761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4135426374341393776, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
+  m_PrefabInstance: {fileID: 1806248626537949760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

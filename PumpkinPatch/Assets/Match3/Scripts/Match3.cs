@@ -25,6 +25,7 @@ namespace Match3
         public GemType targetGemType; // The specific gem type the player needs to match 20 of
 
         private GemMatchTracker gemMatchTracker; // GemMatchTracker instance
+        public TextMeshProUGUI movesLeftText;
 
         InputReader inputReader;
         AudioManager audioManager;
@@ -32,6 +33,12 @@ namespace Match3
         GridSystem2D<GridObject<Gem>> grid;
 
         Vector2Int selectedGem = Vector2Int.one * -1;
+
+        private float clickCooldown = 0.2f;
+        private float lastClickTime = 0f;
+
+        [SerializeField] int maxMoves = 30;
+        private int remainingMoves;
 
         //grabs the dialogue script -Astraea
         public Dialogue dialogue;
@@ -43,12 +50,14 @@ namespace Match3
             inputReader = GetComponent<InputReader>();
             audioManager = GetComponent<AudioManager>();
 
-            gemMatchTracker = new GemMatchTracker(targetGemType); // Track the specific gem type
+            gemMatchTracker = new GemMatchTracker(targetGemType);
 
             InitializeGrid();
             inputReader.Fire += OnSelectGem;
 
-            UpdateMatchProgressText(); // Initialize the UI text with current progress
+            remainingMoves = maxMoves;
+            UpdateMatchProgressText();
+            UpdateMovesLeftText();
         }
 
         void UpdateMatchProgressText()
@@ -65,9 +74,9 @@ namespace Match3
 
         void OnSelectGem()
         {
-            // If a turn is being processed, ignore input
-            if (isProcessingTurn) return;
+            if (isProcessingTurn || Time.time - lastClickTime < clickCooldown) return;
 
+            lastClickTime = Time.time;
             var gridPos = grid.GetXY(Camera.main.ScreenToWorldPoint(inputReader.Selected));
 
             if (!IsValidPosition(gridPos) || IsEmptyPosition(gridPos)) return;
@@ -76,16 +85,18 @@ namespace Match3
             {
                 DeselectGem();
                 audioManager.PlayDeselect();
+                return;
             }
-            else if (selectedGem == Vector2Int.one * -1)
+
+            if (selectedGem == Vector2Int.one * -1)
             {
                 SelectGem(gridPos);
-                
                 audioManager.PlayClick();
+                return;
             }
-            else if (AreAdjacent(selectedGem, gridPos))
+
+            if (AreAdjacent(selectedGem, gridPos))
             {
-                // Start processing the turn
                 isProcessingTurn = true;
                 StartCoroutine(RunGameLoop(selectedGem, gridPos));
             }
@@ -95,6 +106,7 @@ namespace Match3
                 audioManager.PlayNoMatch();
             }
         }
+
 
         bool AreAdjacent(Vector2Int posA, Vector2Int posB)
         {
@@ -108,7 +120,6 @@ namespace Match3
             yield return StartCoroutine(SwapGems(gridPosA, gridPosB));
 
             List<Vector2Int> matches = FindMatches();
-
             if (matches.Count == 0)
             {
                 audioManager.PlayNoMatch();
@@ -122,17 +133,12 @@ namespace Match3
                 {
                     yield return StartCoroutine(ExplodeGems(matches));
 
-                    // Update the progress text after matches are tracked
                     UpdateMatchProgressText();
 
-                    // Check if the player has won after tracking matches
                     if (gemMatchTracker.HasPlayerWon())
                     {
                         Debug.Log("Player has won the level!");
-                        //matchProgressText.text = "You won!";
-
-                        LayoutSwitch layoutSwitch = GetComponent<LayoutSwitch>();
-                        layoutSwitch.LoadNextLevel(layoutSwitch.currentLevelIndex+1);
+                        // Load next level or display win message
                         yield break;
                     }
 
@@ -147,13 +153,33 @@ namespace Match3
                         audioManager.PlayMatch();
                     }
                 }
+
+                // Deduct a move after a successful turn
+                remainingMoves--;
+                UpdateMovesLeftText();
+
+                // Check if out of moves
+                if (remainingMoves <= 0)
+                {
+                    Debug.Log("Out of moves! Restarting level...");
+                    RestartLevel();
+                }
             }
 
             DeselectGem();
             isProcessingTurn = false;
         }
 
+        void UpdateMovesLeftText()
+        {
+            movesLeftText.text = $"{remainingMoves}";
+        }
 
+        void RestartLevel()
+        {
+            // Restart the level.
+            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        }
 
         IEnumerator FillEmptySpots()
         {
