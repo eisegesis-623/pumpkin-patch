@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2923305190463457656}
   - component: {fileID: 3898247471506073456}
   - component: {fileID: 5534921546809251770}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,16 +26,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3052586218329430294}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9900991, y: 0.9900991, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5835389301185787824}
+  m_Father: {fileID: 7439426706000491964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -70}
+  m_AnchoredPosition: {x: 1.2, y: -72.4}
   m_SizeDelta: {x: 195.06, y: 111.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2923305190463457656
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 323965342286497956}
   - component: {fileID: 2708080303907040066}
   - component: {fileID: 5383869043825240772}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,16 +158,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3244382789927336578}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9900991, y: 0.9900991, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5835389301185787824}
+  m_Father: {fileID: 7439426706000491964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000089374, y: 30}
+  m_AnchoredPosition: {x: -3.7505057, y: 26.609894}
   m_SizeDelta: {x: 175.52, y: 100.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &323965342286497956
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 8478258560695217542}
   - component: {fileID: 1333594440680526787}
   - component: {fileID: 5490105800288536894}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PAUSED
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,14 +291,14 @@ RectTransform:
   m_GameObject: {fileID: 6895477982738845310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9900991, y: 0.9900991, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5835389301185787824}
+  m_Father: {fileID: 7439426706000491964}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 115}
+  m_AnchoredPosition: {x: 1.2, y: 118.1}
   m_SizeDelta: {x: 236.78998, y: 44.56253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333594440680526787
@@ -331,8 +331,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PAUSED
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e0e84a7317304b4eb360578655b4bbf, type: 2}
+  m_sharedMaterial: {fileID: -4379197462425230968, guid: 0e0e84a7317304b4eb360578655b4bbf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -356,15 +356,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.42
-  m_fontSizeBase: 50.42
+  m_fontSize: 55.78
+  m_fontSizeBase: 55.78
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 8.614334, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 7356220968333270846}
   - component: {fileID: 6991208980334612129}
   - component: {fileID: 2109555784782948470}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,9 +431,6 @@ RectTransform:
   m_Children:
   - {fileID: 8450542270644667818}
   - {fileID: 7439426706000491964}
-  - {fileID: 3914465278678223819}
-  - {fileID: 1013364469138518690}
-  - {fileID: 8478258560695217542}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -462,7 +459,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &6991208980334612129
 MonoBehaviour:
@@ -515,7 +512,7 @@ GameObject:
   - component: {fileID: 7439426706000491964}
   - component: {fileID: 3552465390808720941}
   - component: {fileID: 1627125781386099325}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +530,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.01, y: 1.01, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8478258560695217542}
+  - {fileID: 3914465278678223819}
+  - {fileID: 1013364469138518690}
   m_Father: {fileID: 5835389301185787824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 8450542270644667818}
   - component: {fileID: 975854160937800410}
   - component: {fileID: 2311041930483656281}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
