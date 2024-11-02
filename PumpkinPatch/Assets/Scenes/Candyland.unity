@@ -160,7 +160,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 740c39951a2c5f64c9e83937bf432aac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ad16e7670aaca2f4a93f328b8eb20257, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -654,6 +654,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 42670938}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 79e6baad2fd414b82a6d49ce1568d2e5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &545595044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,7 +1061,7 @@ MonoBehaviour:
   matchProgressText: {fileID: 10913385}
   targetGemType: {fileID: 11400000, guid: 40867368c228ebb49b18aa602f621dac, type: 2}
   movesLeftText: {fileID: 880748490}
-  maxMoves: 20
+  maxMoves: 18
   dialogue: {fileID: 1240431122}
   winPopup: {fileID: 1214016584}
   losePopup: {fileID: 1130902509}
@@ -1244,7 +1256,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentLevelIndex: 0
-  nextScene: {fileID: 102900000, guid: 49b407bd28ed21444941a7b130628364, type: 3}
 --- !u!114 &1240431122 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8469472829503890026, guid: d65882f1899fc4c4b8e0e11179f3db18, type: 3}
