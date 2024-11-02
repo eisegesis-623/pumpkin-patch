@@ -149,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 740c39951a2c5f64c9e83937bf432aac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2c762f2f8bfdfa44faa5651bb25246dc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -1144,6 +1144,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 42670938}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 79e6baad2fd414b82a6d49ce1568d2e5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1187474296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,7 +1456,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentLevelIndex: 0
-  nextScene: {fileID: 102900000, guid: 9de6539afad05704d9430fdd5417a084, type: 3}
 --- !u!1 &1457791257
 GameObject:
   m_ObjectHideFlags: 0

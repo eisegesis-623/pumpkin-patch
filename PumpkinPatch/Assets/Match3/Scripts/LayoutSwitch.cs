@@ -18,7 +18,7 @@ public class LayoutSwitch : MonoBehaviour
     }
 
 
-    public SceneAsset nextScene;
+    //public SceneAsset nextScene;
     public void LoadNextLevel(int nextIndex)
     {
         SceneManager.LoadScene(nextIndex);
