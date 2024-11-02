@@ -40,8 +40,11 @@ namespace Match3
         [SerializeField] int maxMoves = 30;
         private int remainingMoves;
 
-        //grabs the dialogue script -Astraea
+        //grabs the dialogue script and the popups -Astraea
         public Dialogue dialogue;
+        public GameObject winPopup;
+        public GameObject losePopup;
+        public GameObject bgPopup;
 
         bool isProcessingTurn = false; // Flag to prevent multiple selections during processing
 
@@ -138,7 +141,8 @@ namespace Match3
                     if (gemMatchTracker.HasPlayerWon())
                     {
                         Debug.Log("Player has won the level!");
-                        // Load next level or display win message
+                        winPopup.SetActive(true);
+                        bgPopup.SetActive(true);
                         yield break;
                     }
 
@@ -162,7 +166,10 @@ namespace Match3
                 if (remainingMoves <= 0)
                 {
                     Debug.Log("Out of moves! Restarting level...");
-                    RestartLevel();
+                    if (dialogue) { dialogue.FailMessage(); } else { Debug.Log("No dialogue found."); }
+
+                    losePopup.SetActive(true);
+                    bgPopup.SetActive(true);
                 }
             }
 
@@ -175,7 +182,7 @@ namespace Match3
             movesLeftText.text = $"{remainingMoves}";
         }
 
-        void RestartLevel()
+        public void RestartLevel()
         {
             // Restart the level.
             UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);

@@ -21,7 +21,7 @@ public class LayoutSwitch : MonoBehaviour
     public SceneAsset nextScene;
     public void LoadNextLevel(int nextIndex)
     {
-        SceneManager.LoadScene(nextScene.name);
+        SceneManager.LoadScene(nextIndex);
         //if (nextIndex > 4)
         //{
         //    Debug.Log("You won the game!");
