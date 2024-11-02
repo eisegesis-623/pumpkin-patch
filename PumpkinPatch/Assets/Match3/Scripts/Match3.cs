@@ -44,6 +44,7 @@ namespace Match3
         public Dialogue dialogue;
         public GameObject winPopup;
         public GameObject losePopup;
+        public GameObject bgPopup;
 
         bool isProcessingTurn = false; // Flag to prevent multiple selections during processing
 
@@ -140,7 +141,8 @@ namespace Match3
                     if (gemMatchTracker.HasPlayerWon())
                     {
                         Debug.Log("Player has won the level!");
-                        // Load next level or display win message
+                        winPopup.SetActive(true);
+                        bgPopup.SetActive(true);
                         yield break;
                     }
 
@@ -167,6 +169,7 @@ namespace Match3
                     if (dialogue) { dialogue.FailMessage(); } else { Debug.Log("No dialogue found."); }
 
                     losePopup.SetActive(true);
+                    bgPopup.SetActive(true);
                 }
             }
 
