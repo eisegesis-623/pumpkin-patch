@@ -265,6 +265,17 @@
                 },
                 {
                     "name": "",
+                    "id": "55069638-4474-49ec-b70e-dd70f9f14078",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR;Joystick;Touch;Gamepad;Keyboard&Mouse",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "0347e442-1186-47da-a14d-be289a08bed2",
                     "path": "<Pointer>/position",
                     "interactions": "",
@@ -693,17 +704,6 @@
                 },
                 {
                     "name": "",
-                    "id": "e46215bc-9731-463a-aa55-38f0c34379d6",
-                    "path": "<VirtualMouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "XR;Joystick;Touch;Gamepad;Keyboard&Mouse",
-                    "action": "Point",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "4faf7dc9-b979-4210-aa8c-e808e1ef89f5",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -749,7 +749,7 @@
                 {
                     "name": "",
                     "id": "9c53d2b6-fbaa-44cd-bc6a-d95ef7ed080e",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad;Keyboard&Mouse;Joystick;Touch;XR",
