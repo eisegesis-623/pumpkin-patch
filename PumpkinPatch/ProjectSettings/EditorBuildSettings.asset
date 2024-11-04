@@ -26,4 +26,5 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/YouWinScreen.unity
     guid: 813790d6329634f4499dd9d2214b0ca5
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 916d3dba77e56dd4a9a897e4c24afa76, type: 2}
