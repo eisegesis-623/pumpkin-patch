@@ -254,19 +254,19 @@
                 },
                 {
                     "name": "",
-                    "id": "d1fe7f83-53c0-491c-9f90-23de7b8cd645",
-                    "path": "<Gamepad>/buttonSouth",
+                    "id": "55069638-4474-49ec-b70e-dd70f9f14078",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad;Keyboard&Mouse;Touch;XR;Joystick",
+                    "groups": "XR;Joystick;Touch;Gamepad;Keyboard&Mouse",
                     "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "55069638-4474-49ec-b70e-dd70f9f14078",
-                    "path": "<Gamepad>/rightTrigger",
+                    "id": "a5a59540-6d4a-43f7-a536-4125938bbc37",
+                    "path": "<XInputController>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "XR;Joystick;Touch;Gamepad;Keyboard&Mouse",
@@ -753,6 +753,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad;Keyboard&Mouse;Joystick;Touch;XR",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ab271d7-b5a8-4fc9-88e3-ddcdc8a2853a",
+                    "path": "<XInputController>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad;XR;Joystick;Touch;Keyboard&Mouse",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
